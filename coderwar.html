@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+        </style>
+    </head>
+<body class="">
+    <header>
+        <div class="w-full h-15 flex items-center justify-between mt-2 ">
+            <div class="w-1/3 h-15 flex  justify-start items-center pl-20  ">
+            <img src="./image/logo.png" class=" object-contain w-full h-full  " alt="">
+        </div>
+            <div class="w-full px-20 flex  justify-start">
+            <ul class="flex items-center gap-10 py-2">
+                <li class="text-lg text-pink-400 font-semibold underline underline-offset-4 decoration-pink-400">HOME</li>
+                <li class="text-lg font-semibold ">SHOP</li>
+                <li class="text-lg font-semibold ">ABOUTUS</li>
+                <li class="text-lg font-semibold ">BLOGS</li>
+                <li class="text-lg font-semibold ">PAGES</li>
+                <li class="whitespace-nowrap text-lg font-semibold ">CONTACT US</li>
+            </ul>
+            </div>
+            <div class="w-full flex items-center justify-end px-10 gap-5 ">
+                <div class=" px-2 py-2 rounded-xl text-xl flex items-center justify-center border-1 border-dashed border-pink-400">
+                <i class="fa-solid fa-user"  ></i></div>
+                <div class=" px-2 py-2 flex rounded-xl  items-center text-xl justify-center border-1 border-dashed border-pink-400">
+                <i class="fa-solid fa-cart-arrow-down"></i></div>
+                <button class="px-4 py-2 border-1 border-dashed border-pink-400 py-2 px-2 rounded-lg bg-pink-200">Contact Us 👆</button>
+            </div>
+        </div>
+    </header>
+    <main>
+       <section id="hero" class="w-full h-[730px]  flex items-center ">
+        
+
+  <div class="w-full  flex flex-col lg:flex-row">
+
+    <!-- LEFT SIDE -->
+    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
+      <div class="max-w-[600px] w-full px-5 py-10 ">
+
+        <!-- decorative images -->
+         <img src="./image/flower-vector.png"
+          class="absolute top-5 right-1/3 w-[30px] sm:w-[40px] lg:w-[50px]" alt="">
+        <img src="./image/image-vector-1.png"
+          class="absolute top-5 right-15 w-[80px] sm:w-[120px] lg:w-[150px]" alt="">
+
+        <img src="./image/image-vector-3.png"
+          class="absolute bottom-0 left-1/3 w-[60px] sm:w-[80px] lg:w-[150px]" alt="">
+
+        <img src="./image/flower-vector.png"
+          class="absolute bottom-0 left-1/4 w-[30px] sm:w-[40px] lg:w-[50px]" alt="">
+
+        <!-- heading -->
+         <div class=" h-[250px]  relative">
+        <h1 class="text-3xl font-[playfair] sm:text-3xl lg:text-5xl font-semibold leading-tight">
+          Bring the Outdoors In with our
+          <span class="text-pink-400 font-[Pacifico] whitespace-nowrap text-4xl italic font-bold tracking-widest">
+            Beautiful Flowers
+          </span><br>
+          and Plant
+        </h1>
+         <p class=" absolute bottom-13 -right-15 px-15  text-[12px] mt-5 max-w-md  text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perspiciatis natus maxime. Ipsum nesciunt aliquid odio eaque officiis recusandae dicta, repudiandae magnam commodi earum.
+        </p>
+        <div class="flex gap-10 mt-15 ml-2 flex-wrap">
+          <button class="px-5 py-2 font-[playfair] font-semibold text-lg border border-dashed border-pink-400 rounded-lg bg-pink-200">
+            Shop Now 🌿
+          </button>
+
+          <button class="px-5 py-2 font-[playfair] font-semibold text-lg border border-dashed border-pink-400 rounded-lg">
+            Contact Us👆
+          </button>
+        </div>
+         </div>
+        
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE (FULL WIDTH BG) -->
+    <div class="w-full lg:w-1/2 h-[600px] rounded-tl-3xl rounded-bl-3xl bg-[repeating-linear-gradient(90deg,#ec4899_0_4px,transparent_10px_23px)]  flex items-center justify-center relative">
+      
+      <!-- inner content -->
+      <div class="w-full  flex justify-center">
+
+        <img src="./image/image-vector-2.png"
+          class="absolute top-5 right-1/6 w-[80px] sm:w-[150px]" alt="">
+
+        <img src="./image/hero-image.png"
+          class="w-[350px] sm:w-[350px] lg:w-[650px] absolute bottom-0 -left-1/6 object-contain" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+        <section id="flower_card">
+            <div class="w-full flex flex-col md:flex-row items-center justify-center gap-10 ">
+                <div class="flex items-center rounded-xl justify-around bg-gradient-to-r from-orange-200 to-red-200 px-2 py-2 shadow-[10px_10px_20px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.6)] " >
+                    <div  class="px-2 py-2">
+                      <h2 class="text-2xl leading-loose">Rose Varities</h2>
+                      <a href="SHOP NOW">SHOP NOW</a>
+                </div>
+                <img src="./image/category-01.png" class="w-[150px] h-[150px]" alt="">
+            </div>
+                <div class="flex items-center rounded-xl justify-around px-2 py-2 bg-gradient-to-r from-pink-200 to-purple-200 shadow-[10px_10px_20px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.6)] ">
+                    <div class="px-2 py-2">
+                      <h2 class="text-2xl leading-loose">Rose Varities</h2>
+                      <a href="SHOP NOW">SHOP NOW</a>
+                </div><img src="./image/category-02.png" class="w-[150px] h-[150px]" alt=""></div>
+                <div class="flex items-center rounded-xl justify-around px-2 py-2 bg-gradient-to-r from-green-200 to-yellow-200 shadow-[10px_10px_20px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.6)] ">
+                    <div class="px-2 py-2">
+                      <h2 class="text-2xl leading-loose">Rose Varities</h2>
+                      <a href="SHOP NOW">SHOP NOW</a>
+                </div><img src="./image/category-03.png" class="w-[150px] h-[150px]" alt=""></div>
+                <div class="flex items-center rounded-xl justify-around px-2 py-2 bg-gradient-to-r from-red-200 to-blue-200 shadow-[10px_10px_20px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.6)] ">
+                    <div class="px-2 py-2">
+                      <h2 class="text-2xl leading-loose">Rose Varities</h2>
+                      <a href="SHOP NOW">SHOP NOW</a>
+                </div><img src="./image/category-04.png" class="w-[150px] h-[150px]" alt=""></div>
+            </div>
+        </section>
+        <section id="about">
+          <div class="w-full flex flex-col md:flex-row">
+             <div class="w-1/2 px-10 bg-[url('./image/about-bg-vector.png')]">
+                <div class="px-20 ml-10 pt-20 ">
+                <h1 class="text-5xl font-semibold">Bring the Outdoors In with our, <span class="text-4xl text-pink-400 italic font-bold ">One flower </span> <br>and Plant</h1>
+                </div>
+                <div class=" px-10 pl-30 my-5 text-gray-400 ">
+                <p class="text-md  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio libero, voluptas repellat, incidunt facilis non minima voluptates aspernatur pariatur cumque, harum minus nemo. Aperiam, rem. Nisi porro, ut laboriosam delectus officiis voluptate ducimus quod tempora quia deleniti asperiores incidunt distinctio veniam assumenda nobis aperiam molestias reiciendis? Nemo, nostrum veniam?</p>
+                <p class="text-sm mt-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio libero, voluptas repellat, incidunt facilis non minima voluptates aspernatur pariatur cumque, harum minus nemo. Aperiam, rem. Nisi porro, ut laboriosam delectus officiis voluptate ducimus quod tempora quia deleniti asperiores incidunt distinctio veniam assumenda nobis aperiam molestias reiciendis? Nemo, nostrum veniam?</p>
+            </div>
+             <button class="px-4 py-2 ml-30 border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+             </div>
+             <div class="w-1/2 h-full flex items-center justify-center ">
+                
+                
+                <div class="h-[350px] w-[350px] py-15 relative">
+                    <div class="h-[110px] w-[200px] absolute top-15 -right-10  bg-gradient-to-br from-pink-200 to-pink-400  flex items-center  justify-center px-10 text-center  rounded-full rotate-45  shadow-[10px_10px_20px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.6)] ">
+                    <h1 class="text-3xl font-semibold rotate-[0deg] text-gray-700 drop-shadow-md ">25 years Experience</h1>
+                </div>
+                    <img src="./image/about-1-object.png" class="absolute -bottom-1/2 -left-20 w-[200px] h-[200px]" alt="">
+                    <img src="./image/about-1.png" alt="">
+                </div>
+             </div>
+          </div>
+        </section>
+        <section class="features">
+            <div class="flex items-center justify-between px-25   mt-10">
+                <h1 class="text-4xl font-bold">Featured  <span class="text-pink-400">Flowers</span></h1>
+                <button class="px-4 py-2 ml-30 border-1 bg-pink-200 border-dashed border-pink-400 py-2 px-2 rounded-lg ">View all 🌿</button>
+            </div>
+            <div class="w-full flex items-center justify-center">
+                <div class="w-[75%] flex items-center justify-center overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+            <div class=" flex flex-col md:flex-row items-center justify-center gap-10 px-20 mt-10 ">
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="flex items-center justify-center py-2"><img src="./image/category-01.png"  class="w-[150px] h-[150px]" alt=""></div>
+                  <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+         <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                    <div class="flex items-center  justify-center py-2"><img src="./image/category-02.png"  class="w-[150px] h-[150px]" alt=""></div>
+                   <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                    <div class="flex items-center  justify-center py-2"><img src="./image/category-03.png"  class="w-[150px] h-[150px]" alt=""></div>
+                    <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                     <div class="flex items-center  justify-center py-2"><img src="./image/category-04.png" class="w-[150px] h-[150px]"  alt=""></div>
+                    <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="flex items-center justify-center py-2"><img src="./image/category-01.png"  class="w-[150px] h-[150px]" alt=""></div>
+                  <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+         <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                    <div class="flex items-center  justify-center py-2"><img src="./image/category-02.png"  class="w-[150px] h-[150px]" alt=""></div>
+                   <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                    <div class="flex items-center  justify-center py-2"><img src="./image/category-03.png"  class="w-[150px] h-[150px]" alt=""></div>
+                    <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+                <div class="w-[250px] h-[350px] border-1 border-dashed border-pink-400 flex flex-col rounded-3xl">
+                     <div class="flex items-center  justify-center py-2"><img src="./image/category-04.png" class="w-[150px] h-[150px]"  alt=""></div>
+                    <div class="flex flex-col rounded-3xl px-5 bg-pink-200">
+                        <h1 class="text-xl font-bold">Lily Lane</h1>
+                        <p class=" text-[12px] mt-2 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <h3 class=" font-semibold text-lg pb-1">$49.00 </h3>
+        <div class="flex justify-between  py-1"><div class="flex gap-2 ">
+            <div class="px-3 py-1 mx-2 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">-</span></div><span class="text-md font-semibold py-1">1</span>
+            <div class="px-3 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><span class="font-semibold text-md">+</span></div>
+        </div>
+    <div class="px-2 mx-2 py-1 rounded-md  border-1 border-dashed border-pink-600"><i class="fa-solid fa-shopping-cart text-gray-600"></i></div></div>
+
+    </div>
+                </div>
+            </div></div>
+                
+            </div>
+            <div class="flex items-center justify-center gap-10 px-20 mt-15">
+                <div class="w-[250px] h-[100px] border-1 border-dashed px-5 py-5 border-pink-400 rounded-xl">
+                   
+                    <div class="flex items-center  ">
+                        <div class="py-4"><i class="fa-solid fa-truck text-3xl text-pink-400"></i></div>
+                        <div class="flex flex-col px-2">
+                            <h1 class="text-xl font-semibold text-gray-700 leading-loose">Free Shipping</h1>
+                            <span class="text-[12px] text-gray-700 whitespace-nowrap">Enjoy Hassie-Free Shipping</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[250px] h-[100px] border-1 border-dashed px-5 py-5 border-pink-400 rounded-xl">
+                    <div class="flex items-center  ">
+                        <div class="py-4"><i class="fa-solid fa-ticket text-3xl text-pink-400"></i></div>
+                        <div class="flex flex-col px-2">
+                            <h1 class="text-xl font-semibold text-gray-700 leading-loose">Offer and Gift</h1>
+                            <span class="text-[12px] text-gray-700 whitespace-nowrap">Irresistible Offers Await You!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[250px] h-[100px] border-1 border-dashed px-5 py-5 border-pink-400 rounded-xl">
+                    <div class="flex items-center  ">
+                        <div class="py-4"><i class="fa-solid fa-users text-3xl text-pink-400"></i></div>
+                        <div class="flex flex-col px-2">
+                            <h1 class="text-xl font-semibold text-gray-700 leading-loose">Happy CLient</h1>
+                            <span class="text-[12px] text-gray-700 whitespace-nowrap">Customer Satisfaction Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[250px] h-[100px] border-1 border-dashed px-5 py-5 border-pink-400 rounded-xl">
+                    <div class="flex items-center  ">
+                        <div class="py-4"><i class="fa-solid fa-lock text-3xl text-pink-400"></i></div>
+                        <div class="flex flex-col px-2">
+                            <h1 class="text-xl font-semibold text-gray-700 leading-loose whitespace-nowrap">Secured Checkout</h1>
+                            <span class="text-[12px] text-gray-700 whitespace-nowrap">Priority:Your Privacy & Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="w-full mt-10 flex items-center justify-center">
+                <div class="w-[75%] h-[450px] border-20 rounded-3xl border-pink-200 flex  justify-center">
+                    <div class="w-1/2 font-serif  flex flex-col items-center py-10  bg-[url('./image/about-bg-vector.png')] relative">
+                        <h3 class="text-4xl font-semibold text-[#4A0E0E] leading-loose">SPECIAL OFFER</h3>   
+                        <h1 class="text-8xl font-semibold text-[#4A0E0E] mb-8">SUMMER</h1>
+                        <span class="text-5xl font-semibold text-[#4A0E0E]">UP TO 50% OFF</span>
+                        <span class=" absolute top-2/5 left-1/3 text-7xl font-semibold text-[#F472B6] font-[Pacifico]">Sale</span>
+                        <button class="px-5 py-2 mt-10 font-semibold border border-dashed border-pink-400 rounded-lg bg-pink-200">
+            Shop Now 🌿
+          </button>
+                    </div>
+                    <div class="w-1/2 h-[400px] ">
+                        <img src="./image/banner-img-xl.png" class="w-full h-full object-contains" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients font-serif ">
+            <div class="flex items-center justify-center px-25   mt-10">
+                <h1 class="text-4xl font-bold">Words from  <span class="text-pink-400"> Our Clients</span></h1>
+            </div>
+            <div class="w-full flex items-center justify-center mt-10 ">
+                <div class="w-[60%] flex items-center justify-center gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                    <div class="w-full  px-2 flex items-center justify-center border-1 border-dashed border-pink-400 rounded-3xl">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-2.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                    <div class="w-full px-2 flex items-center justify-center border-1 border-dashed border-pink-400 rounded-3xl ">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-1.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2 ">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                     <div class="w-full px-2 flex items-center justify-center border-1 border-dashed  border-pink-400 rounded-3xl">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-2.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2 ">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                     <div class="w-full px-2 flex items-center justify-center border-1 border-dashed  border-pink-400 rounded-3xl">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-1.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2 ">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                     <div class="w-full  px-2 flex items-center justify-center border-1 border-dashed border-pink-400 rounded-3xl ">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-2.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                    <div class="w-full px-2 flex items-center justify-center border-1 border-dashed  border-pink-400 rounded-3xl">
+                        <div class="w-[150px] h-[150px] rounded-2xl">
+                            <img src="./image/t-1.png" class="w-full h-full object-cover rounded-2xl" alt="">
+                        </div>
+                        <div class="w-1/2 px-6 my-2 ">
+                            <div class="mt-2">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        <i class="fa-solid fa-star text-gray-400"></i>
+                        </div>
+                         <h1 class="text-md text-pink-400 whitespace-nowrap font-bold">Ethan Clarke  <span class="text-black">-Customer</span></h1>
+                         <div class="text-sm  py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque accusantium natus nobis, tenetur laborum?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="flex items-center justify-between px-25   mt-10">
+                <h1 class="text-4xl font-bold">Our Latest  <span class="text-pink-400">Articles</span></h1>
+                <button class="px-4 py-2 ml-30 border-1 bg-pink-200 border-dashed border-pink-400 py-2 px-2 rounded-lg ">View all 🌿</button>
+            </div>
+            <div class="w-full flex items-center justify-center">
+                <div class="w-[75%] flex items-center justify-center overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                 <div class=" flex flex-col md:flex-row items-center justify-center gap-10 px-20 mt-10 ">
+                   <div class="w-[350px] h-[400px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="w-[350px] h-[170px] rounded-tl-3xl rounded-tr-3xl"><img src="./image/b-1.png"  class="w-full h-full object-cover rounded-tl-3xl rounded-tr-3xl" alt=""></div>
+                  <div class="w-[350px] h-[225px] flex flex-col mt-2">
+                       <div class="flex items-center justify-around px-4">
+                        <div class="flex  gap-3">
+                            <img src="./image/ua-1.png" class="w-[50px] h-[50px]" alt="">
+                            <h1 class="text-[12px] whitespace-nowrap text-pink-400">By:-Williams</h1>
+                        </div>
+                        <button class="px-4 py-2 ml-30 border-1  border-dashed border-pink-400 font-semibold  rounded-lg whitespace-nowrap ">14,April 2024</button>
+                       </div>
+                       <div class="px-5 py-2">
+                        <h1 class="text-xl font-bold">A Beginner's Guide to Flower  Arranging Tips and Tricks</h1>
+                        <p class=" text-[12px] mt-1 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <button class="px-4 py-2   border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+        </div>
+
+    </div>
+                </div> 
+                  <div class="w-[350px] h-[400px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="w-[350px] h-[170px] rounded-tl-3xl rounded-tr-3xl"><img src="./image/b-3.png"  class="w-full h-full object-cover rounded-tl-3xl rounded-tr-3xl" alt=""></div>
+                  <div class="w-[350px] h-[225px] flex flex-col mt-2">
+                       <div class="flex items-center justify-around px-4">
+                        <div class="flex  gap-3">
+                            <img src="./image/ua-3.png" class="w-[50px] h-[50px]" alt="">
+                            <h1 class="text-[12px] whitespace-nowrap text-pink-400">By:-Williams</h1>
+                        </div>
+                        <button class="px-4 py-2 ml-30 border-1  border-dashed border-pink-400 font-semibold  rounded-lg whitespace-nowrap ">14,April 2024</button>
+                       </div>
+                       <div class="px-5 py-2">
+                        <h1 class="text-xl font-bold">A Beginner's Guide to Flower  Arranging Tips and Tricks</h1>
+                        <p class=" text-[12px] mt-1 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <button class="px-4 py-2   border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+        </div>
+
+    </div>
+                </div> 
+                  <div class="w-[350px] h-[400px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="w-[350px] h-[170px] rounded-tl-3xl rounded-tr-3xl"><img src="./image/b-2.png"  class="w-full h-full object-cover rounded-tl-3xl rounded-tr-3xl" alt=""></div>
+                  <div class="w-[350px] h-[225px] flex flex-col mt-2">
+                       <div class="flex items-center justify-around px-4">
+                        <div class="flex  gap-3">
+                            <img src="./image/ua-2.png" class="w-[50px] h-[50px]" alt="">
+                            <h1 class="text-[12px] whitespace-nowrap text-pink-400">By:-Williams</h1>
+                        </div>
+                        <button class="px-4 py-2 ml-30 border-1  border-dashed border-pink-400 font-semibold  rounded-lg whitespace-nowrap ">14,April 2024</button>
+                       </div>
+                       <div class="px-5 py-2">
+                        <h1 class="text-xl font-bold">A Beginner's Guide to Flower  Arranging Tips and Tricks</h1>
+                        <p class=" text-[12px] mt-1 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <button class="px-4 py-2   border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+        </div>
+
+    </div>
+                </div> 
+                  <div class="w-[350px] h-[400px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="w-[350px] h-[170px] rounded-tl-3xl rounded-tr-3xl"><img src="./image/b-3.png"  class="w-full h-full object-cover rounded-tl-3xl rounded-tr-3xl" alt=""></div>
+                  <div class="w-[350px] h-[225px] flex flex-col mt-2">
+                       <div class="flex items-center justify-around px-4">
+                        <div class="flex  gap-3">
+                            <img src="./image/ua-3.png" class="w-[50px] h-[50px]" alt="">
+                            <h1 class="text-[12px] whitespace-nowrap text-pink-400">By:-Williams</h1>
+                        </div>
+                        <button class="px-4 py-2 ml-30 border-1  border-dashed border-pink-400 font-semibold  rounded-lg whitespace-nowrap ">14,April 2024</button>
+                       </div>
+                       <div class="px-5 py-2">
+                        <h1 class="text-xl font-bold">A Beginner's Guide to Flower  Arranging Tips and Tricks</h1>
+                        <p class=" text-[12px] mt-1 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <button class="px-4 py-2   border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+        </div>
+
+    </div>
+                </div> 
+                 <div class="w-[350px] h-[400px] border-1 border-dashed border-pink-400 rounded-3xl flex flex-col ">
+                    <div class="w-[350px] h-[170px] rounded-tl-3xl rounded-tr-3xl"><img src="./image/b-2.png"  class="w-full h-full object-cover rounded-tl-3xl rounded-tr-3xl" alt=""></div>
+                  <div class="w-[350px] h-[225px] flex flex-col mt-2">
+                       <div class="flex items-center justify-around px-4">
+                        <div class="flex  gap-3">
+                            <img src="./image/ua-2.png" class="w-[50px] h-[50px]" alt="">
+                            <h1 class="text-[12px] whitespace-nowrap text-pink-400">By:-Williams</h1>
+                        </div>
+                        <button class="px-4 py-2 ml-30 border-1  border-dashed border-pink-400 font-semibold  rounded-lg whitespace-nowrap ">14,April 2024</button>
+                       </div>
+                       <div class="px-5 py-2">
+                        <h1 class="text-xl font-bold">A Beginner's Guide to Flower  Arranging Tips and Tricks</h1>
+                        <p class=" text-[12px] mt-1 max-w-md  text-gray-500">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit ut dolore repudiandae necessitatibus fugiat!
+        </p>
+        <button class="px-4 py-2   border-1 bg-pink-200 border-dashed border-pink-400  rounded-lg ">Read More <i class="fa-solid fa-book-open text-pink-800"></i></button>
+        </div>
+
+    </div>
+                </div>
+                 </div>  
+                </div>
+            </div>
+
+        </section>
+        <section class="newslatter">
+            <div class="w-full flex items-center justify-center mt-10 relative">
+                <div class="w-[65%] h-30 py-2 px-2 border-1 border-dashed border-pink-400 font-serif  rounded-3xl flex items-center justify-around absolute top-5">
+                    <div class="px-8 py-2">
+                        <h1 class="text-3xl  text-[#4A0E0E] mb-2">Subscribe to our newsletter</h1>
+                        <p class="text-sm  text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure quidem quasi quos at? Doloribus.</p>
+                    </div>
+                    <div class="flex item-center">
+                        <form action="" class="flex item-center gap-5">
+                            <input type="email" placeholder="Your Email" class="border-1 border-dashed border-pink-500 px-2">
+                             <button class="px-4 py-2 border-1 border-dashed border-pink-400 py-2 px-2 rounded-lg bg-pink-200 whitespace-nowrap">Subscribe 👆</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+          <!--footer-->
+          <section id="footer">
+            <footer class="bg-gradient-to-t from-[#FBC2EB] to-[ #A6C1EE] font-serif py-16 mt-25">
+              <div class="max-w-6xl mx-auto  grid grid-cols-1 md:grid-cols-5 gap-15">
+              <div>
+                <img src="./image/logo.png" alt="">
+                <p class=" text-sm">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quidem sint quae magnam doloribus alias impedit incidunt, soluta repellat cupiditate earum, obcaecati ab a? Exercitationem!
+
+                </p>
+                <h4 class="px-2">MON-FRI <br>08:00 AM - 05:00 PM</h4>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Useful Links</h3>
+                <ul class="space-y-2 ">
+                  <li><a href="home.html" class="hover:text-pink-800 transition">Home</a></li>
+                  <li><a href="about.html" class="hover:text-pink-800 transition">About</a></li>
+                  <li><a href="services.html" class="hover:text-pink-800 transition">Services</a></li>
+                  <li><a href="portfolio.html" class="hover:text-pink-800 transition">Portfolio</a></li>
+                  <li><a href="contact.html" class="hover:text-pink-800 transition">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Shop</h3>
+                <ul class="space-y-2 ">
+                  <li><a href="home.html" class="hover:text-pink-800 transition">Home</a></li>
+                  <li><a href="about.html" class="hover:text-pink-800 transition">About</a></li>
+                  <li><a href="services.html" class="hover:text-pink-800 transition">Services</a></li>
+                  <li><a href="portfolio.html" class="hover:text-pink-800 transition">Portfolio</a></li>
+                  <li><a href="contact.html" class="hover:text-pink-800 transition">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Subscribe</h3>
+                <p class=" text-sm mb-4">Get updates on our latest  offers.</p>
+                <div class="flex">
+                  <input type="email" placeholder="Your Email" 
+                  class="w-full px-4 py-2 rounded-l-xl outline-none text-black">
+                  <button class="bg-pink-400 text-white px-4 rounded-r-xl font-semibold hover:bg-[#4A0E0E] transition">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class=" text-sm mb-2"><i class="fa-solid fa-location-dot mr-2"></i>123 Decor Street, GreenCity</p>
+                <p class=" text-sm mb-2"><i class="fa-solid fa-phone mr-2"></i>+91 98765 43210</p>
+                <p class=" text-sm mb-2"><i class="fa-solid fa-envelope mr-2"></i>info@decoraspace.com</p>
+              </div>
+              
+              
+            </div>
+            <div class="max-w-6xl mx-auto px-10 mt-8 flex flex-col md:flex-row justify-between items-center border-t border-pink-700 pt-6">
+              <p class=" text-sm mb-4 md:mb-0">© 2026 bloom. All rights reserved.</p>
+              <div class="flex gap-4 text-xl">
+                <a href="#" class=" hover:text-pink-800 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class=" hover:text-pink-800 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class=" hover:text-pink-800 transition"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#" class=" hover:text-pink-800 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            </div>
+          </footer>
+          </section>
+    
+    </footer>
+</body>
+</html>
